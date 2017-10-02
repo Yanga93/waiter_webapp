@@ -1,0 +1,28 @@
+{
+  "name": "waiter_webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanga93/waiter_webapp.git"
+  },
+  "author": "Yanga Zukelwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanga93/waiter_webapp/issues"
+  },
+  "homepage": "https://github.com/Yanga93/waiter_webapp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.11.13",
+    "nodemon": "^1.12.1"
+  }
+}

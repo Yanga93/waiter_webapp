@@ -1,0 +1,54 @@
+<div class="jumbotron">
+  <h1 class="display-5">{{msg}}</h1>
+  <p class="lead">{{select}}</p>
+</div>
+
+<h3 align="center">{{#each previousDays}}
+  <li>{{this}}</li>
+{{/each}}</h3> 
+<h3 align="center">{{update}}</h3><br>
+
+<div align="center" class="">
+
+  <form class="form-control" action="/waiters/{{waiterName}}" method="post">
+
+    <span>
+<label for="day" class="btn btn-outline-secondary">
+  <label class="btn btn-outline-info">
+    <input type="checkbox" name="day" value="Monday" {{#if waiterDay.Monday}} checked {{/if}}>Monday
+  </label>
+  <label class="btn btn-outline-info">
+    <input type="checkbox" name="day" value="Tuesday" {{#if waiterDay.Tuesday}} checked {{/if}}>Tuesday
+
+</label>
+<label class="btn btn-outline-info">
+  <input type="checkbox" name="day" value="Wednesday" {{#if waiterDay.Wednesday}} checked {{/if}}>Wednesday
+
+</label>
+<label class="btn btn-outline-info">
+  <input type="checkbox" name="day" value="Thursday" {{#if waiterDay.Thursday}} checked {{/if}}>Thursday
+
+</label>
+<label class="btn btn-outline-info">
+  <input type="checkbox" name="day" value="Friday" {{#if waiterDay.Friday}} checked {{/if}}>Friday
+
+</label>
+<label class="btn btn-outline-info">
+  <input type="checkbox" name="day" value="Saturday" {{#if waiterDay.Saturday}} checked {{/if}}>Saturday
+
+</label>
+<label class="btn btn-outline-info">
+  <input type="checkbox" name="day" value="Sunday" {{#if waiterDay.Sunday}} checked {{/if}}>Sunday
+
+</label>
+<input type="submit" class="btn btn-success" name="butt" value="Submit"> </span>
+    </label>
+  </form>
+  <br>
+  <h3>{{Data}}</h3><br>
+  {{#each WaiteData}}
+    {{waiter_name}}
+    <li>{{this}}</li>
+  {{/each}}
+  <h3>{{messages.error}}</h3>
+</div>

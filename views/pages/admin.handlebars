@@ -1,0 +1,38 @@
+<h3 align="center">Color Keys</h3>
+<div align="center" class="keys">
+
+  <div class="col-sm-4 bg-{{oV}}">
+    Over three Subscribed
+  </div>
+
+  <div class="col-sm-4 bg-{{nO}}">
+    Three Waiters Subscribed
+  </div>
+
+  <div class="col-sm-4 bg-{{uN}}">
+    Under three Waiters Subscribed
+  </div><br>
+
+</div>
+<br>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <th class="bg-{{mThead}}">Monday ({{m}})</th>
+      <th class="bg-{{tThead}}">Tuesday ({{t}})</th>
+      <th class="bg-{{wThead}}">Wednesday ({{w}})</th>
+      <th class="bg-{{thThead}}">Thursday ({{th}})</th>
+      <th class="bg-{{fThead}}">Friday ({{f}})</th>
+      <th class="bg-{{sThead}}">Saturday ({{s}})</th>
+      <th class="bg-{{suThead}}">Sunday ({{su}})</th>
+      <tbody>
+        {{#each days}}
+          <td>
+            {{#each this}}
+              <li>{{this.waiter_name}}</li>
+            {{/each}}
+          </td>
+        {{/each}}
+      </tbody>
+  </table>
+</div>
