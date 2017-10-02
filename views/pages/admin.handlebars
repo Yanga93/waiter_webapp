@@ -28,9 +28,11 @@
       <tbody>
         {{#each days}}
           <td>
-            {{#each this}}
-              <li>{{this.waiter_name}}</li>
-            {{/each}}
+            <ul class="list-group">
+              {{#each this}}
+                <li>{{this.waiter_name}}</li>
+              {{/each}}
+            </ul>
           </td>
         {{/each}}
       </tbody>

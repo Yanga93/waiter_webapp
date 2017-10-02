@@ -55,7 +55,7 @@ module.exports = function(models) {
           res.render('pages/waiter', {
             msg: "Welcome back " + waiterName +
               " you previously selected these days: ",
-            update: "You can change your previous selection by selecting new days to work on below",
+            update: "Update your new days below",
             previousDays: dayList,
             waiterDay: previousWaiterDays,
             waiterName

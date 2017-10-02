@@ -5,7 +5,7 @@
 
 <ul class="list-group">
   {{#each previousDays}}
-    <li class="list-group-item">{{this}}</li>
+    <li class="list-group-item list-group-item-primary">{{this}}</li>
   {{/each}}
 </ul>
 <br>
@@ -49,9 +49,13 @@
   </form>
   <br>
   <h3>{{Data}}</h3><br>
-  {{#each WaiteData}}
-    {{waiter_name}}
-    <li>{{this}}</li>
-  {{/each}}
+
+  <ul class="list-group">
+    {{#each WaiteData}}
+      {{waiter_name}}
+      <li class="list-group-item list-group-item-primary">{{this}}</li>
+    {{/each}}
+  </ul>
+
   <h3>{{messages.error}}</h3>
 </div>

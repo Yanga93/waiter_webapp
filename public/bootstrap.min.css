@@ -64,6 +64,7 @@ html {
 }
 
 *, ::after, ::before {
+  color: #F3F7F3;
   box-sizing: inherit
 }
 
@@ -349,7 +350,7 @@ template {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit
+  color: #57728A;
 }
 
 .h1, h1 {
@@ -1290,6 +1291,7 @@ pre code {
 
 .table-bordered td, .table-bordered th {
   border: 1px solid #e9ecef
+  /*color: #868e96;*/
 }
 
 .table-bordered thead td, .table-bordered thead th {
