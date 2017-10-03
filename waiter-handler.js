@@ -64,7 +64,7 @@ module.exports = function(models) {
       } else {
         res.render("pages/waiter", {
           msg: "Welcome " + waiterName,
-          select: "Please select three days to work on below:",
+          select: "Please select three days you will work below:",
           waiterName
         })
 
@@ -80,7 +80,7 @@ module.exports = function(models) {
     var daysWorking = req.body.day;
 
     if (!daysWorking) {
-      req.flash('error', 'Please select days you wanna work on');
+      req.flash('error', 'Please select days you will below:');
       res.redirect("/waiters/" + waiterName)
     } else {
       let days = daysWorking.map(function(day) {
@@ -120,7 +120,7 @@ module.exports = function(models) {
           res.render('pages/waiter', {
             msg: "Days added successfully",
             WaiteData: daysWorking,
-            Data: waiterName + " you are woking on :",
+            Data: waiterName + " you are working on :",
             waiterName
           })
 
